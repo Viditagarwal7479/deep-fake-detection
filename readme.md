@@ -6,11 +6,12 @@
 
 - Here dlib.get_frontal_face_detector() was used which is based upon HOG (Histograms\
  of Oriented Gradients) and Linear SVM. Other functions such as dlib cnn_face_detection_model_v1("model_path") where we can pass pretrained cnn model like MMOD (Max Margin Object Detection) but keeping time and resources under view HOG + Linear SVM based face detection was most suitable.
+ 
 - Only taking 1 frame in 20 frame to reduce the processing time, dataset size, ensuring that model doesn't start to classify based on 
   the face as in a video the nearby frames look very much the same so make a good dataset and we have about double the fake video dataset than real 
   video. A good model needs a good dataset.
-- I have used Adam optimizer but SGD with momentum is also a nice candidate as an optimizer but in an article, I read that Adam is faster but compromises a bit upon convergence as compared to SGD with momentum.
-Final results might vary a bit as the dataset was shuffled between epochs (shuffle=True) and based upon some random parameters at the time of initialization.
+  
+- Then a InceptionV3 model was used a binary classifier to categorise real and fake images. So the video have more number of fake frames will be a deep fake video.
 
 
 ## How to Use:
