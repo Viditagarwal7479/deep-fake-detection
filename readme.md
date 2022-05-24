@@ -19,13 +19,7 @@
 - In dataPreprocessing.py change the paths of the folder where the real and fake videos have been downloaded.
 - In training.py and submission.py ensure that the path is coorect, and change the batch size based on hardware available.
 
-## Hardware Used:
-
-- intel xeon gold 6248r (4 cores)
-- 16GB RAM
-- Nvidia Tesla T4 (16 GB RAM)
-
-## Metrics
+## Results
 
 - Mean F1-Score of 0.9871.
 
