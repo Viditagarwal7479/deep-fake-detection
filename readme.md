@@ -23,5 +23,8 @@
 
 - Mean F1-Score of 0.9871.
 
+## Kaggle Jupyter Notebook Link
+- https://www.kaggle.com/viditagarwal112/deepfake-detection-inceptionv3
+
 ## About the competeion and dataset
 - https://www.kaggle.com/c/deepfake-detection/
